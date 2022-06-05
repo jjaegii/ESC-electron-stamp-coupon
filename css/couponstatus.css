@@ -1,0 +1,45 @@
+body {
+    background-color: #00e1ff;
+}
+
+#box {
+    position: relative;
+    top: 15px;
+    display: block;
+    width: 600px;
+    height: 750px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 3%;
+    text-align: center;
+}
+
+#logo {
+    position: relative;
+    font-family: 'Jua', sans-serif;
+    font-size: 60px;
+    color: darkblue;
+    top: 3%;
+}
+
+.coupons {
+    position: relative;
+    top: 10%;
+    left: 50px;
+    width: 500px;
+    height: 100px;
+    border: 3px solid;
+    font-family: 'Jua', sans-serif;
+    font-size: 30px;
+}
+
+.image {
+    width: 50px;
+}
+
+#back {
+    position: relative;
+    width: 60px;
+    right: 250px;
+    top: 20px;
+}

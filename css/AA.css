@@ -1,0 +1,93 @@
+body {
+    background-color: #00e1ff;
+    height: 100%;
+    min-height: 100%;
+    overflow: hidden !important;
+    touch-action: none;
+}
+
+#box {
+    position: relative;
+    top: 15px;
+    display: block;
+    width: 600px;
+    height: 750px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 3%;
+    text-align: center;
+}
+
+#logo {
+    position: relative;
+    font-family: 'Jua', sans-serif;
+    font-size: 60px;
+    color: darkblue;
+    top: 3%;
+}
+
+.image {
+    position: relative;
+    top: 30px;
+    height: 200px;
+    width: 250px;
+}
+
+.txt {
+    position: relative;
+    top: 30px;
+    font-family: 'Jua', sans-serif;
+    font-size: 30px;
+}
+
+#김치찌개,
+#두부김치 {
+    position: relative;
+    right: 75px;
+}
+
+#된장찌개,
+#제육볶음 {
+    position: relative;
+    left: 75px;
+}
+
+#status {
+    position: relative;
+    top: 50px;
+    font-family: 'Jua', sans-serif;
+    width: 500px;
+    height: 50px;
+    font-size: 20px;
+}
+
+#checkbox {
+    position: relative;
+    left: 200px;
+    bottom: 15px;
+    font-family: 'Jua', sans-serif;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+#order {
+    position: relative;
+    left: 200px;
+    top: 0px;
+    font-family: 'Jua', sans-serif;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+#coupon {
+    position: relative;
+    font-family: 'Jua', sans-serif;
+    font-size: 30px;
+}
+
+#back {
+    position: relative;
+    width: 60px;
+    right: 20px;
+    top: 20px;
+}

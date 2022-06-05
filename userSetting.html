@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserSettings</title>
+    <link rel="stylesheet" href="css/userSetting.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="box">
+        <a href="main.html">
+            <img src="img/back.png" id="back">
+        </a>
+        <div id="logo">
+            설정
+        </div>
+        <div id="addrform">
+            <div class="txt">주소변경</div>
+            <input type="text" id="homeaddr">
+            <input type="button" value="주소변경" id="addrsubmit" class="btn">
+        </div>
+        <div id="resetpsform">
+            <div class="txt">비밀번호변경</div>
+            <div>
+                현재 비밀번호 : <input type="password" id="presentpassword" class="text">
+            </div>
+            <div>
+                비 밀 번 호 : <input type="password" id="ps" class="text">
+            </div>
+            <div>
+                비밀번호 재입력 : <input type="password" id="re_ps" class="text">
+            </div>
+            <input type="button" value="비밀번호변경" id="pssubmit" class="btn">
+        </div>
+    </div>
+</body>
+<script src="js/userSetting.js"></script>
+</html>

@@ -1,0 +1,46 @@
+body {
+    background-color: #00e1ff;
+}
+
+#box {
+    display: block;
+    width: 600px;
+    height: 750px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 3%;
+    text-align: center;
+}
+
+#logo {
+    position: relative;
+    font-family: 'Jua', sans-serif;
+    font-size: 60px;
+    color: darkblue;
+    top: 3%;
+}
+
+.btn {
+    position: relative;
+    font-family: 'Jua', sans-serif;
+    font-size: 30px;
+    top: 10px;
+}
+
+.cell {
+    position: relative;
+    top: 5%;
+}
+
+#menu {
+    position: relative;
+    font-family: 'Jua', sans-serif;
+    font-size: 30px;
+    top: 20%;
+}
+
+#txt {
+    position: relative;
+    font-size: 30px;
+    top: 10px;
+}

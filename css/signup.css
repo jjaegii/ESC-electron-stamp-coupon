@@ -1,0 +1,60 @@
+body {
+    background-color: #00e1ff;
+}
+
+#box {
+    position: relative;
+    top: 15px;
+    display: block;
+    width: 600px;
+    height: 750px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 3%;
+    text-align: center;
+}
+
+#logo {
+    position: relative;
+    font-family: 'Jua', sans-serif;
+    font-size: 60px;
+    color: darkblue;
+    top: 10%;
+}
+
+#form {
+    font-family: 'Jua', sans-serif;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    top: 30%;
+}
+
+#reps {
+    font-size: 18px;
+}
+
+.text {
+    font-size: 30px;
+    border-radius: 30px;
+}
+
+.signform {
+    font-size: 30px;
+}
+
+.btn {
+    position: relative;
+    font-family: 'Jua', sans-serif;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: white;
+    top: 30px;
+}
+
+#back {
+    position: relative;
+    width: 60px;
+    top: 20px;
+    right: 250px;
+}

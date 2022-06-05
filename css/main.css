@@ -1,0 +1,46 @@
+body {
+    background-color: #00e1ff;
+}
+
+#box {
+    position: relative;
+    top: 15px;
+    display: block;
+    width: 600px;
+    height: 750px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 3%;
+    text-align: center;
+}
+
+#logo {
+    position: relative;
+    font-family: 'Jua', sans-serif;
+    font-size: 60px;
+    color: darkblue;
+    top: 20px;
+}
+
+.restaurant {
+    font-family: 'Jua', sans-serif;
+    font-size: 50px;
+    position: relative;
+    top: 70px;
+    
+}
+
+#back {
+    position: relative;
+    width: 60px;
+    top: 20px;
+    right: 250px;
+}
+
+.btn {
+    position: relative;
+    font-family: 'Jua', sans-serif;
+    font-size: 30px;
+    top: 90px;
+    left: 170px;
+}
