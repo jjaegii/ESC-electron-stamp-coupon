@@ -4,10 +4,6 @@ const lineReader = require('line-reader')
 const fs = require('fs')
 var user = "";
 
-require('electron-reload')(__dirname, {
-  electron: path.join(__dirname, 'node_modules', '.bin', 'electron.cmd')
-})
-
 ipcMain.on('signup', (event, argument) => {
   fs.writeFile('./users.txt', "\n" + argument, { flag: 'a+' }, err => {
     if (err) {
@@ -21,9 +17,8 @@ ipcMain.on('signup', (event, argument) => {
       return;
     }
   })
-
-  app.quit();
-  createWindow();
+  dialog.showMessageBox(null, { type: 'info', title: '회원가입 성공', message: '회원가입 완료.' });
+  event.sender.send('signupok');
 })
 
 ipcMain.on('login', (event, argument) => {
@@ -32,24 +27,14 @@ ipcMain.on('login', (event, argument) => {
     if (line == argument) {
       flag = 1;
       user = argument.split(" ")[0];
-      app.quit();
-      const win = new BrowserWindow({
-        width: 720,
-        height: 810,
-        icon: 'img/logo.png',
-        frame: false,
-        webPreferences: {
-          preload: path.join(__dirname, '/'),
-          nodeIntegration: true,
-          contextIsolation: false,
-        }
-      })
-      win.loadFile('main.html')
+      event.sender.send('loginok');
     }
+  })
+  setTimeout(function() {
     if (flag == 0) {
       dialog.showMessageBox(null, { type: 'info', title: '로그인 실패', message: '아이디 또는 비밀번호가 일치하지 않습니다.' });
     }
-  })
+  }, 100);
 })
 
 ipcMain.on('user', (event, argument) => {
@@ -137,7 +122,6 @@ function createWindow() {
   })
 
   win.loadFile('login.html')
-  //win.setMenu(null)
 }
 
 app.whenReady().then(() => {

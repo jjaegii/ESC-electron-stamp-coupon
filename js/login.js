@@ -14,6 +14,9 @@ class Login {
     login(ID, PS) {
         let user = ID + " " + PS;
         ipcRenderer.send('login', user);
+        ipcRenderer.on('loginok', (event,argument) => {
+            location.href = "main.html";
+        })
     }
 }
 

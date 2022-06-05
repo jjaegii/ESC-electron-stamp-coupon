@@ -8,7 +8,6 @@ let reps = document.querySelector("#repassword");
 class SignUp {
     constructor(ID, PS, REPS) {
         if (this.checkId(ID) == true && this.checkPassword(PS, REPS) == true) {
-            alert('회원가입 완료');
             this.signup(ID, PS);
         }
     }
@@ -40,6 +39,9 @@ class SignUp {
     signup(ID, PS) {
         let user = ID + " " + PS;
         ipcRenderer.send('signup', user);
+        ipcRenderer.on('signupok', (event, argument) => {
+            location.href = "login.html";
+        })
     }
 }
 
